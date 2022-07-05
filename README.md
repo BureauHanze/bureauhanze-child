@@ -4,4 +4,4 @@
 2. Put "bureauhanze-child" in theme folder
 3. Move files from folder "place-in-root" to the root of your project (outside httpdocs)
 4. npm install
-5. Enjoy
+5. Activate child theme and Enjoy
