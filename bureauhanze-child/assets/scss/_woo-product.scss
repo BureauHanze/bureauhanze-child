@@ -1,0 +1,155 @@
+// .single_product_outer {
+//     > .product {
+//         display: grid;
+//         grid-template-columns: 58% 38%;
+//         max-width: 100%;
+//         gap: 4%;
+//         > div {
+//             width: 100%;    
+//         }
+
+//         button {
+//             color: white;
+//             background-color: $primary-color;            
+//         }
+
+//         .product_gallery  {
+//             position: relative;
+//             img {
+//                 aspect-ratio: 4 / 3;
+//                 object-fit: contain;
+//             }
+//             .bigSwiper {
+//                 border: solid 1px $primary-color;
+//                 margin-bottom: $margin-lg;
+//             }
+//             .thumbSwiper {
+//                 .swiper-wrapper {
+//                     display: grid;
+//                     grid-template-columns: repeat(5, 1fr);
+//                     gap: 15px;
+//                 }
+//                 .swiper-slide {
+//                     min-width: 100%;
+//                     flex: 1;
+//                     margin: 0px !important;
+//                     border: solid 2px $primary-color;
+//                     cursor: pointer;
+//                     &.swiper-slide-thumb-active {
+//                         border-color: $secondary-color;
+//                     }
+//                     img {
+//                         aspect-ratio: 1 / 1;
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
+
+//     .product_summary {
+//         form.cart {
+//             display: flex;
+//             }
+//             .quantity input {
+//                 border-right: none;
+//                 height: 100%;
+//             }
+//             .qnty_add {
+//                 border: solid 1px black;
+//                 border-left: none;
+//                 margin-right: $margin-md;
+//             }
+//         }
+//     }
+//     .product_related {
+//         grid-column: 1 / span 2;
+//         margin-bottom: $margin-lg;
+//     }
+// }
+
+// .stock {
+//     padding: $padding-sm $padding-md;
+//     background-color: #f2f2f2;
+//     display: inline-block;
+//     margin-bottom: $margin-md;
+//     font-weight: 600;
+//     &.instock {
+//         color: rgb(155, 207, 78);
+//     }
+//     &.onbackorder {
+//         color: rgb(239, 165, 74);
+//     }
+//     &.outofstock {
+//         color: rgb(255, 87, 87);
+//     }
+// }
+
+
+// .tab_info {
+//     position: relative;
+//     &:before {
+//         content: '';
+//         display: block;
+//         width: 9px;
+//         height: 16px;
+//         position: absolute;
+//         right: 14px;
+//         pointer-events: none;
+//         background-image: url('/wp-content/themes/bureauhanze/assets/svg/arrow-slider.svg');
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//         transform: rotate(-90deg);
+//         transition: 0.3s;
+//     }
+//     &.rotateArrow::before {
+//         transition: 0.3s;
+//         transform: rotate(90deg);
+//     }
+//     > div {
+//         display: none;
+//         &.showDesc {
+//             display: block;
+//         }
+//     }
+// }
+
+// .shop_attributes {
+//     width: 100%;
+//     tbody {
+//         width: 100%;
+//         border-spacing: 0px;
+//         tr {
+//             width: 100%;
+//             display: flex;
+//             justify-content: space-between;
+//             padding: $padding-sm $padding-md;
+//             &:nth-child(odd) {
+//                 background-color: #f2f2f2;
+//             }
+//             td {
+//                 p {
+//                     margin-bottom: 0px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .products_grid.columns-4 {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: $gap-md;
+//     padding: 0px;
+//     margin-top: $margin-lg;
+// }
+
+
+// .single-product {
+//     .woocommerce-product-gallery {
+//         display: flex;
+//         align-items: center;
+//         background-color: $primary-color-d-6;
+//         width: 100% !important;
+//     }
+// }
+

@@ -1,0 +1,66 @@
+//WooCommerce notices
+
+.woocommerce-notices-wrapper, .woocommerce-NoticeGroup {
+    .woocommerce-message, .woocommerce-error {
+        display: flex;
+        justify-content: flex-start;
+        padding: $padding-md;
+        align-items: center;
+        border: none;
+        color: #fff;
+        box-shadow: 0 7px 28px rgba(0, 0, 0, 0.2);
+        a {
+            margin-right: $margin-sm;
+        }
+        &:after {
+            display: none;
+        }
+        .close_notice {
+            display: flex;
+            width: 24px;
+            height: 24px;
+            padding: 7px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 100px;
+            margin-left: auto;
+            .close {
+                content:url('../svg/close.svg');
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &::before {
+            color: #fff;
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-right: $margin-md;
+        }
+    }
+    .woocommerce-message {
+        background-color: $green; 
+    }
+    .woocommerce-error {
+        background-color: $red;;
+        ul {
+            padding: 0px;
+            margin: 0px;
+            li {
+                color: white;
+            }
+        }
+        a {
+            margin-left: auto;
+        }
+    }
+    a {
+        // margin-left: auto;
+        margin-right: 0px;
+        margin-bottom: auto;
+        text-decoration: none;
+        .step_back_btn {
+            border-color: white;
+            color: white;
+        }
+    }
+}

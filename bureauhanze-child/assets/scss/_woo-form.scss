@@ -1,0 +1,109 @@
+.checkout {
+    label {
+        position: absolute;
+        left: 16px;
+        top: 15px;
+        transition: all 0.25s ease-in-out;
+        color: gray;
+        background: white;
+    }
+    label,
+    input,
+    textarea {
+        font-family: $font-family;
+        font-size: 16px;
+        transition: all 0.2s;
+        touch-action: manipulation;
+    }
+    input,
+    textarea {
+        width: 100%;
+        border: 0px;
+        cursor: text;
+        border: 1px solid #e5e5e5;
+        &:focus {
+            outline: 0;
+        }
+        &::placeholder {
+            color: gray;
+        }
+    }
+    input {
+        height: 50px;
+        padding-left: $padding-md;
+        &:nth-of-type() {
+            margin-bottom: 0;
+        }
+    }
+    textarea {
+        height: 200px;
+        padding: $padding-sm $padding-md;
+    }
+    [type="text"],
+    [type="email"],
+    [type="tel"],
+    textarea {
+        width: 100%;
+        &:focus {
+            border-color: $primary-color;
+        }
+    }
+    label.focused {
+        top: -12px;
+        transform: none;
+        transition: all 0.2s ease;
+        color: $primary-color;
+        padding: 0 8px;
+        transform: translateX(-4px);
+    }
+    [type="submit"] {
+        position: relative;
+        background: $primary-color;
+        color: white;
+        height: 50px;
+        max-width: 170px;
+        cursor: pointer;
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+    input[type='checkbox'] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+                appearance: none;
+        outline: none;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #E4E6E4;
+        overflow: hidden;
+        cursor: pointer;
+        padding:0 0.6rem !important;
+        font-size: inherit !important;
+        margin: 0 0 $margin-sm;
+        margin-right: $margin-sm;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            left: 2px;
+            background-color: transparent;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 2px;
+            -webkit-transform: scale(0);
+                    transform: scale(0);
+            -webkit-transition: -webkit-transform 0.25s ease-in-out;
+            transition: -webkit-transform 0.25s ease-in-out;
+            transition: transform 0.25s ease-in-out;
+            background-image: url("data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjQ0OCIgaGVpZ2h0PSI0NDgiIHZpZXdCb3g9IjAgMCA0NDggNDQ4Ij4KPHRpdGxlPjwvdGl0bGU+CjxnIGlkPSJpY29tb29uLWlnbm9yZSI+CjwvZz4KPHBhdGggZD0iTTQxNy43NSAxNDEuNWMwIDYuMjUtMi41IDEyLjUtNyAxN2wtMjE1IDIxNWMtNC41IDQuNS0xMC43NSA3LTE3IDdzLTEyLjUtMi41LTE3LTdsLTEyNC41LTEyNC41Yy00LjUtNC41LTctMTAuNzUtNy0xN3MyLjUtMTIuNSA3LTE3bDM0LTM0YzQuNS00LjUgMTAuNzUtNyAxNy03czEyLjUgMi41IDE3IDdsNzMuNSA3My43NSAxNjQtMTY0LjI1YzQuNS00LjUgMTAuNzUtNyAxNy03czEyLjUgMi41IDE3IDdsMzQgMzRjNC41IDQuNSA3IDEwLjc1IDcgMTd6Ij48L3BhdGg+Cjwvc3ZnPgo=");
+        }
+        &:checked::before {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+}

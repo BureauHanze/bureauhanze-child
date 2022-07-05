@@ -1,0 +1,26 @@
+.header {
+    .header__nav {
+        .container {
+            .menu-main-container {
+                margin-left: auto;
+                .menu {
+                    margin: 0 $margin-lg 0 0;
+                }
+            }
+            
+        }
+    }
+}
+
+.--sticky {
+    .header__nav {
+        .container {
+            .btn-shopping-bag {
+                position: relative;
+                svg {
+                    fill: white;
+                }
+            }
+        }
+    }
+}

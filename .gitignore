@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+httpdocs/wp-config.php
+/bureauhanze
+index.php
